@@ -1,6 +1,6 @@
 # Quality Commands - A CLI Guide for Testers
 
-## Typing Cfffommands
+## Typing Commands
 
 ### Basic Command Structure
 
