@@ -1,10 +1,16 @@
 # Quality Commands - A CLI Guide for Testers
 
+## Intro
+
+Using the command line interface, or CLI, is a great way to get things done. It's very powerful and convenient, but it can also be very intimidating. This README is intended to be used as a quick reference for some basic work to help build confidence in the command line. So open your terminal app and lets get started!
+
+---
+
 ## Typing Commands
 
 ### Basic Command Structure
 
-Commands in CLI may have multiple components. For example, the remove command is used to delete files and directories. The use of the command requires typing the command `rm`, the file or directory you would like to delete `sample.html` and any additional options. Options can be typed out fully or notated with short hand. A full option would look like `--force`, while a short option would look like `-f`. A full remove command example:
+CLI commands are comprised of 3 components: the program, arguments and options. For example, the Remove program is used to delete files and directories. The use of the command requires typing the program - `rm` - and the argument, which in this case is the file or directory you would like to delete - `sample.html`. Options can be typed out fully or notated with short hand, if you need to use one. A full option would look like `--force`, while a short option would look like `-f`. Note the used of `--` when typing out a full option rather than a single `-` when using the abbreviated option. A full remove command example:
 
 > `rm sample.html -f`
 
@@ -28,8 +34,11 @@ And this example is using the `|` operator to join 2 commands together than will
 
 > `ls | grep dev`
 
+---
+
 ## Useful Common Commands
 
+- `pwd` : Prints your current directory, also known as the working directory.
 - `cd <directory-name>` : Change directory to the specified directory. If no directory is given, then you will be taken to the user's root directory.
 - `..` : Navigate to parent directory.
 - `ls` : List files and directories in my current directory. Use the `-a` all option will display all files, including files that may be hidden when simply using the `ls` list command alone.
@@ -42,6 +51,7 @@ And this example is using the `|` operator to join 2 commands together than will
 
 ## Common Git Commands
 
+- `clear` : Clears the terminal of all visible text.
 - `git status` : Displays the status of the current branch.
 - `git checkout <branch-name>` : Checks out the branch specified. This command is used
   - `git checkout -b <branch-name>` : When creating a branch for the first time, you will need to use the `-b` new branch option.
@@ -53,6 +63,10 @@ And this example is using the `|` operator to join 2 commands together than will
 - `git commit` : Commits all staged files to git. You will be prompted to enter a commit message unless this command is followed by `-m "your-commit-message"`.
 - `git push` : Pushes the committed changes to the remote server (GitHub). This does command does not have to be run after each commit, however, it is recommend to use it frequently as it preserves a copy of your changes on your remote server.
 
+---
+
 ## Additional Resources
 
 [FreeCodeCamp.com Git training](https://www.freecodecamp.org/news/git-and-github-crash-course/)
+
+[Terminal Basics](https://www.youtube.com/watch?v=5XgBd6rjuDQ)
